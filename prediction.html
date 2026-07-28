@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction | Climate Intelligence</title>
+    <meta name="description" content="Heatwave prediction and climate risk modeling." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html"><i class="fa-solid fa-cloud-sun me-2"></i><span class="brand-accent">Climate</span> Intelligence</a>
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="monitoring.html">Monitoring</a></li>
+            <li class="nav-item"><a class="nav-link active" href="prediction.html">Prediction</a></li>
+            <li class="nav-item"><a class="nav-link" href="early-warning.html">Early Warning</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <div class="hero-badge mb-3"><i class="fa-solid fa-brain"></i> Predictive Modeling</div>
+      <h1 class="hero-title mb-3">Heatwave Prediction System</h1>
+      <p class="section-text">This section demonstrates how climate intelligence can forecast extreme heat conditions using historical trends, humidity patterns, and seasonal weather behavior.</p>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-8">
+          <div class="card chart-card">
+            <h3 class="section-title">Predicted Temperature Trends</h3>
+            <div style="height: 300px;">
+              <canvas data-chart="line" data-label="Prediction" data-labels='["Day 1","Day 2","Day 3","Day 4","Day 5","Day 6","Day 7"]' data-values='[39,39.5,40.2,41,42.3,43,42]' data-color="#ffb703"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card chart-card h-100">
+            <h3 class="section-title">Prediction Summary</h3>
+            <div class="mb-3">
+              <div class="metric-label">Prediction Confidence</div>
+              <div class="metric-value">86%</div>
+            </div>
+            <div class="mb-3">
+              <div class="metric-label">Estimated Heatwave Probability</div>
+              <div class="metric-value">74%</div>
+            </div>
+            <div>
+              <div class="metric-label">Risk Category</div>
+              <span class="badge-risk badge-high">High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-6">
+          <div class="card timeline-card">
+            <h3 class="section-title">Risk Categories</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><span class="badge-risk badge-low">Low</span> Normal seasonal heat with minimal impact</li>
+              <li class="mb-2"><span class="badge-risk badge-moderate">Moderate</span> Rising heat with elevated health concerns</li>
+              <li class="mb-2"><span class="badge-risk badge-high">High</span> Strong heatwave conditions likely to affect communities</li>
+              <li><span class="badge-risk badge-extreme">Extreme</span> Severe conditions requiring emergency action</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card timeline-card">
+            <h3 class="section-title">Prediction Factors</h3>
+            <ul>
+              <li>Temperature trends over the last 7–14 days</li>
+              <li>Humidity and moisture stress indicators</li>
+              <li>Historical climate records and seasonal patterns</li>
+              <li>Wind movement and atmospheric pressure shifts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card table-card mt-4">
+        <h3 class="section-title">7-Day Prediction Table</h3>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Predicted Temp</th>
+                <th>Probability</th>
+                <th>Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Day 1</td>
+                <td>39°C</td>
+                <td>68%</td>
+                <td><span class="badge-risk badge-moderate">Moderate</span></td>
+              </tr>
+              <tr>
+                <td>Day 2</td>
+                <td>40°C</td>
+                <td>72%</td>
+                <td><span class="badge-risk badge-high">High</span></td>
+              </tr>
+              <tr>
+                <td>Day 3</td>
+                <td>42°C</td>
+                <td>80%</td>
+                <td><span class="badge-risk badge-high">High</span></td>
+              </tr>
+              <tr>
+                <td>Day 4</td>
+                <td>43°C</td>
+                <td>87%</td>
+                <td><span class="badge-risk badge-extreme">Extreme</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <p class="mb-1">© 2026 Climate Intelligence Project · Predictive analytics demo</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
