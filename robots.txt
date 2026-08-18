@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://princceparmar.github.io/climate-intelligence/sitemap.xml
